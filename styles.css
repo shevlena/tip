@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+
+body {
+  background-color: #c5e4e7;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono';
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 920px;
+  height: 481px;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
+  position: absolute;
+}
+
+.input-fields {
+  padding: 47px 493px 48px 48px;
+}
+
+.tip {
+  width: 413px;
+  height: 417px;
+  background: #00474B;
+  border-radius: 15px;
+  position: relative;
+  left: 475px;
+  top: -448px;
+  padding: 40px;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5E7A7D;
+  margin-bottom: 6px;
+}
+
+.select_tip {
+  margin-bottom: 16px;
+}
+
+.select {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.white {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+input[type="number"] {
+  border: none;
+  font-family: 'Space Mono';
+  width: 379px;
+  height: 48px;
+  background-color: #f3f9fa;
+  background-position: left 19px center;
+  background-repeat: no-repeat;
+  padding: 6px 17px 6px 45px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474B;
+  outline-width: 2px;
+  outline-color: #26c2ae;
+  border-radius: 5px;
+}
+
+
+
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+#bill-amount {
+  background-image: url(./image/dolar.svg);
+}
+
+#number-of-people {
+  background-image: url(./image/people.svg);
+}
+
+.box_number-of-people {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tip-percentages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tip-amount,
+.total-per-person {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  font-size: 13px;
+  line-height: 19px;
+  color: #7F9D9F;
+}
+
+.dollars {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26C2AE;
+}
+
+button {
+  border: none;
+  width: 333px;
+  height: 48px;
+  background: #0d686d;
+  border-radius: 5px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474B;
+  margin-top: 27px;
+  cursor: pointer;
+}
+/* #calculate:hover {
+  background-color: #9FE8DF;
+}
+#reset:hover {
+  background-color: #9FE8DF;
+} */
+input[type=radio] {
+  display: none;
+
+}
+
+.percent {
+  background: #00474B;
+  ;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 48px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.custom {
+ background-color: #F3F9FA;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 48px;
+  color: #547878;
+  cursor: pointer;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+
+}
+
+input.active {
+  max-width: 117px;
+  height: 48px;
+  border: none;
+  font-family: 'Space Mono';
+  background-color: #f3f9fa;
+  padding: 6px 8px 6px 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00474B;
+  text-align: right;
+  outline-width: 2px;
+  outline-color: #26c2ae;
+  border-radius: 5px;
+}
+input.active::placeholder {
+  text-align: center;
+}
+
+
+.percent:hover {
+  background: #9FE8DF;
+  color: #00474B;
+}
+
+input[type=radio]:checked+label {
+  background: #26C2AE;
+  color: #00474B;
+}

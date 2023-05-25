@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>форма калькулятор оплата з чайовими</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="input-fields">
+      <div class="bill-amount">
+        <div class="field">
+          <div class="label">Bill</div>
+          <input type="number" id="bill-amount" name="bill-amount" value="" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="select">
+        <div class="label select_tip">Select Tip %</div>
+        <div class="tip-percentages">
+          <div>
+            <input type="radio" name="tip" value="5" id="five-percent" />
+            <label for="five-percent" class="percent">5%</label>
+          </div>
+          <div>
+            <input type="radio" name="tip" value="10" id="ten-percent" />
+            <label for="ten-percent" class="percent">10%</label>
+          </div>
+          <div>
+            <input type="radio" name="tip" value="15" id="fifteen-percent" />
+            <label for="fifteen-percent" class="percent">15%</label>
+          </div>
+          <div>
+            <input type="radio" name="tip" value="25" id="twenty-five-percent" />
+            <label for="twenty-five-percent" class="percent">25%</label>
+          </div>
+          <div>
+            <input type="radio" name="tip" value="50" id="fifty-percent" />
+            <label for="fifty-percent" class="percent">50%</label>
+          </div>
+          <div>
+            <input type="radio" name="tip" value="" id="custom" class="custom"/>
+            <label for="custom" class="custom" id="labelcustom">Custom</label>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="number-of-people">
+        <div class="box_number-of-people">
+          <div class="label">Number of People</div>
+          <div class="label"><span id="not-calculate"></span></div>
+        </div>
+
+        <div class="field">
+          <input type="number" id="number-of-people" name="number-of-people" value="" placeholder="0" />
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="tip">
+      <div class="tip-amount">
+        <div class="box">
+          <div class="label white">Tip Amount</div>
+          <span class="person">/ person</span>
+        </div>
+
+        <div class="dollars"><span>$</span><span id="tip-amount">0.00</span></div>
+      </div>
+
+      <div class="total-per-person">
+        <div class="box">
+          <div class="label white">Total</div>
+          <span class="person">/ person</span>
+        </div>
+
+        <div class="dollars"><span>$</span><span id="total-per-person">0.00</span></div>
+      </div>
+
+      <div class="button-wrapper">
+        <button id="calculate" disabled>CALCULATE</button>
+      </div>
+
+      <div class="button-wrapper">
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
