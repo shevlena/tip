@@ -38,6 +38,7 @@ customInput.onclick = function () {
         customInput.classList.add('active'); // додавання нового класу з іншими стилями
         customInput.placeholder = 'Custom'; // додавання placeholderу
         label.style.display = 'none'; // приховування label
+         customInput.focus();
     }
 }
 
